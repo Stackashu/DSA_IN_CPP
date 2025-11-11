@@ -21,9 +21,9 @@ int main(){
 
     int n = 10;
     int *p = &n;
-    cout<<"Value of arr is :"<< p <<endl;
+    cout<<"Value of arr is :"<< n <<endl;
     update(arr);
-    cout<<"Value of arr is :"<< p <<endl;
+    cout<<"Value of arr is :"<< n <<endl;
 
 
 

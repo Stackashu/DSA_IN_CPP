@@ -5,10 +5,11 @@ int main(){
     // Address of a variable is the memory address of the variable
     int a = 5;
     int b = a;
-    cout<<"Address of b is :"<<&a<<endl;
+    cout<<"Address of a is :"<<&a<<endl;
     b++;
-    cout<<"Value of b is :"<<a<<endl;
+    cout<<"Value of a is :"<<a<<endl;
     cout<<"Address of b is :"<<&b<<endl;
+    cout<<"Value of b is :" << b << endl;
 
     int *ptr = &a;
 
@@ -24,8 +25,8 @@ int main(){
     cout<<"Value of a is :"<<*q<<endl; //value of a
 
 
-    int z = 10
-    int *r = z;
+    int z = 10;
+    int *r = &z;
     cout<<"Address of a is :"<<r<<endl; //memory address of a
     cout<<"Value of a is :"<<*r<<endl; //value of a
 
