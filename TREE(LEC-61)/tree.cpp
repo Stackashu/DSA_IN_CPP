@@ -3,6 +3,7 @@
 using namespace std;
 
 class Node{
+
     public:
     int data;
     Node* left;
@@ -13,6 +14,7 @@ class Node{
         this->left = NULL;
         this->right = NULL;
     }
+
 };
 
 Node* buildTree(Node* root){
@@ -36,7 +38,7 @@ Node* buildTree(Node* root){
 
 void printTree(Node* root){
     if(root == NULL) return;
-    queue<Node*> q;
+    queue <Node*> q;
     q.push(root);
 
     while(!q.empty())
@@ -46,13 +48,17 @@ void printTree(Node* root){
             Node* temp = q.front();
             q.pop();
             if(temp){
+
                 cout << temp->data << " ";
+
                 if(temp->left){
                     q.push(temp->left);
                 }
+
                 if(temp->right){
                     q.push(temp->right);
                 }
+
             }
         }
         cout << endl;
