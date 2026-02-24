@@ -60,7 +60,7 @@ public:
             child = new TrieNode(word[0]);
             root->children[index] = child;
         }
-
+         //This will led to the Time Complexity of O(n^2) because of string will be created 
         insertUtil(child, word.substr(1));
     }
 
